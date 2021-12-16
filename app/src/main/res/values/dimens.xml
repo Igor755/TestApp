@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--region Padding/Margin/Offset-->
+    <dimen name="offset_x">4dp</dimen>
+    <dimen name="offset_x2_6">6dp</dimen>
+    <dimen name="offset_x2">8dp</dimen>
+    <dimen name="offset_x3">12dp</dimen>
+    <dimen name="offset_x4">16dp</dimen>
+    <dimen name="offset_x5">20dp</dimen>
+    <dimen name="offset_x6">24dp</dimen>
+    <dimen name="offset_x7">28dp</dimen>
+    <dimen name="offset_x8">32dp</dimen>
+    <dimen name="offset_x9">36dp</dimen>
+    <dimen name="offset_x10">40dp</dimen>
+    <dimen name="offset_x11">44dp</dimen>
+    <dimen name="offset_x12">48dp</dimen>
+    <dimen name="offset_x14">56dp</dimen>
+    <dimen name="offset_x16">64dp</dimen>
+    <dimen name="offset_x18">72dp</dimen>
+    <dimen name="offset_x20">80dp</dimen>
+    <dimen name="offset_x22">88dp</dimen>
+    <dimen name="offset_x24">96dp</dimen>
+    <dimen name="offset_x25">100dp</dimen>
+    <dimen name="offset_x26">104dp</dimen>
+    <dimen name="offset_x30">120dp</dimen>
+    <dimen name="offset_x40">160dp</dimen>
+    <dimen name="offset_x50">190dp</dimen>
+    <dimen name="offset_x55">220dp</dimen>
+
+    <!--endregion-->
+
+    <!--region Corner-->
+    <dimen name="corner_2">2dp</dimen>
+    <dimen name="corner_4">4dp</dimen>
+    <dimen name="corner_8">8dp</dimen>
+    <dimen name="corner_12">12dp</dimen>
+    <dimen name="corner_16">16dp</dimen>
+    <!--endregion-->
+
+    <!--region Elevation-->
+    <dimen name="elevation_1">1dp</dimen>
+    <dimen name="elevation_2">2dp</dimen>
+    <dimen name="elevation_4">4dp</dimen>
+    <dimen name="elevation_8">8dp</dimen>
+    <!--endregion-->
+
+    !--region Typography-->
+    <!--https://material.io/design/typography/the-type-system.html#type-scale-->
+    <dimen name="headline_1">32sp</dimen>
+    <dimen name="headline_2">24sp</dimen>
+    <dimen name="headline_3">20sp</dimen>
+    <dimen name="headline_3_5">18sp</dimen>
+    <dimen name="headline_4">16sp</dimen>
+    <dimen name="headline_5">15sp</dimen>
+    <dimen name="headline_6">10sp</dimen>
+    <dimen name="headline_7">12sp</dimen>
+
+    ////////////bottom navigation menu
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">56dp</dimen>
+
+    ////switch
+    <dimen name="switch_padding">-1dp</dimen>
+    <dimen name="switch_radius">36dp</dimen>
+    <dimen name="switch_size">36dp</dimen>
+    <dimen name="fab_margin">16dp</dimen></resources>
