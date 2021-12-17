@@ -11,9 +11,7 @@ import com.company.test_app.data.entity.presentation.PrivatBank
 import com.company.test_app.data.entity.presentation.ResponseTso
 import com.company.test_app.domain.interactor.PrivatBankInteractor
 import com.company.test_app.presentation.viewmodel.BaseViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.handleCoroutineException
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
@@ -90,5 +88,29 @@ class PrivatBankViewModel @Inject constructor(private var privatBankInteractor: 
 
     fun goToTso() {
         navigateTo(Navigate.Global.TSO)
+    }
+
+    fun main() = runBlocking<Unit> {
+        try {
+            failedConcurrentSum()
+        } catch(e: ArithmeticException) {
+            println("Computation failed with ArithmeticException")
+        }
+    }
+
+    suspend fun failedConcurrentSum(): Int = coroutineScope {
+        val one = async<Int> {
+            try {
+                delay(Long.MAX_VALUE) // Emulates very long computation
+                42
+            } finally {
+                println("First child was cancelled")
+            }
+        }
+        val two = async<Int> {
+            println("Second child throws an exception")
+            throw ArithmeticException()
+        }
+        one.await() + two.await()
     }
 }

@@ -31,7 +31,6 @@ class PrivatBankFragment : BaseFragment() {
     private val viewModel: PrivatBankViewModel by lazy {
         ViewModelProvider(this, viewModelFactory).get(PrivatBankViewModel::class.java)
     }
-
     override fun getLayoutId(): Int = R.layout.fragment_privat_bank
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
